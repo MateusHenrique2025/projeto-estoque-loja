@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Trocar senha - Sistema de Estoque</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+  <header class="topo">
+    <h1>Trocar senha</h1>
+    <p class="sub">A nova senha precisa ter pelo menos 8 caracteres</p>
+    <nav id="menu" class="menu" aria-label="Telas do sistema" hidden></nav>
+  </header>
+
+  <main class="conteudo">
+    <p id="aviso" class="aviso" role="status" hidden></p>
+
+    <section class="cartao">
+      <form id="formulario" novalidate>
+        <div class="campo">
+          <label for="atual">Senha atual</label>
+          <input id="atual" type="password" autocomplete="current-password" required>
+        </div>
+        <div class="campo">
+          <label for="nova">Nova senha</label>
+          <input id="nova" type="password" autocomplete="new-password" minlength="8" required>
+        </div>
+        <div class="campo">
+          <label for="confirmacao">Confirme a nova senha</label>
+          <input id="confirmacao" type="password" autocomplete="new-password" minlength="8" required>
+        </div>
+        <div class="acoes"><button type="submit">Alterar senha</button></div>
+      </form>
+    </section>
+  </main>
+
+  <script src="config.js"></script>
+  <script src="auth.js"></script>
+  <script src="senha.js"></script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login - Sistema de Estoque</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="login.css">
+</head>
+<body>
+  <main class="login">
+    <h1>SISTEMA DE ESTOQUE</h1>
+    <p class="subtitulo">Acesse sua conta</p>
+
+    <form id="formulario-login">
+      <label for="usuario">Login</label>
+      <input id="usuario" name="usuario" type="text" autocomplete="username" required>
+
+      <label for="senha">Senha</label>
+      <input id="senha" name="senha" type="password" autocomplete="current-password" required>
+
+      <button type="submit">ENTRAR</button>
+      <p id="mensagem" role="alert"></p>
+    </form>
+  </main>
+
+  <script src="auth.js"></script>
+  <script src="login.js"></script>
+</body>
+</html>
